@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.0.37">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Matt Williamson">
+
+<title>AGU archetype analysis</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+span.underline{text-decoration: underline;}
+div.column{display: inline-block; vertical-align: top; width: 50%;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<script src="AGU_files/libs/clipboard/clipboard.min.js"></script>
+<script src="AGU_files/libs/quarto-html/quarto.js"></script>
+<script src="AGU_files/libs/quarto-html/popper.min.js"></script>
+<script src="AGU_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="AGU_files/libs/quarto-html/anchor.min.js"></script>
+<link href="AGU_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="AGU_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="AGU_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="AGU_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="AGU_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+
+
+</head>
+
+<body class="fullcontent">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">AGU archetype analysis</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Matt Williamson </p>
+          </div>
+  </div>
+    
+    
+  </div>
+  
+
+</header>
+
+<section id="data-sources" class="level2">
+<h2 class="anchored" data-anchor-id="data-sources">Data Sources</h2>
+<p>Meredith will ultimately need to provide the info on the various input datasets, but I’m leaving a place for it here.</p>
+</section>
+<section id="data-processing" class="level2">
+<h2 class="anchored" data-anchor-id="data-processing">Data Processing</h2>
+<p>In order to include the AOP-generated canopy height and leaf area index estimates, I had to join some of the data from the first LENS meeting (at SESYNC; <code>aop.vars</code>) to the data that Meredith processed (<code>database1202</code>). Because the siteID’s in the original data don’t align with those in Meredith’s data, I had to process those here as well.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggbiplot)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Loading required package: ggplot2</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Loading required package: plyr</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Loading required package: scales</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Loading required package: grid</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>── Attaching packages
+───────────────────────────────────────
+tidyverse 1.3.2 ──</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>✔ tibble  3.1.8      ✔ dplyr   1.0.10
+✔ tidyr   1.2.1      ✔ stringr 1.4.1 
+✔ readr   2.1.2      ✔ forcats 0.5.1 
+✔ purrr   0.3.5      
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::arrange()    masks plyr::arrange()
+✖ readr::col_factor() masks scales::col_factor()
+✖ purrr::compact()    masks plyr::compact()
+✖ dplyr::count()      masks plyr::count()
+✖ purrr::discard()    masks scales::discard()
+✖ dplyr::failwith()   masks plyr::failwith()
+✖ dplyr::filter()     masks stats::filter()
+✖ dplyr::id()         masks plyr::id()
+✖ dplyr::lag()        masks stats::lag()
+✖ dplyr::mutate()     masks plyr::mutate()
+✖ dplyr::rename()     masks plyr::rename()
+✖ dplyr::summarise()  masks plyr::summarise()
+✖ dplyr::summarize()  masks plyr::summarize()</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(softImpute)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Loading required package: Matrix
+
+Attaching package: 'Matrix'
+
+The following objects are masked from 'package:tidyr':
+
+    expand, pack, unpack
+
+Loaded softImpute 1.4-1
+
+
+Attaching package: 'softImpute'
+
+The following object is masked from 'package:tidyr':
+
+    complete</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggsci)</span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(factoextra)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Welcome! Want to learn more? See two factoextra-related books at https://goo.gl/ve3WBa</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(sf)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Linking to GEOS 3.9.1, GDAL 3.2.2, PROJ 7.2.1; sf_use_s2() is TRUE</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>aopvars <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"chm_mean"</span>, <span class="st">"chm_std"</span>, <span class="st">"lai_mean"</span>, <span class="st">"lai_std"</span>)</span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>aop.vars <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"data/original/NEON-AOP-Mergeddata.csv"</span>) <span class="sc">%&gt;%</span> <span class="fu">select</span>(., <span class="fu">c</span>(Site, aopvars)) <span class="sc">%&gt;%</span> </span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(., <span class="at">siteID =</span> <span class="fu">substr</span>(Site, <span class="dv">5</span>, <span class="dv">8</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Rows: 118 Columns: 118
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: ","
+chr   (3): Site, FIRST_nlcdClass, FIRST_soilTypeOrder
+dbl (115): Barren Land (Rock/Sand/Clay), Cultivated Crops, Deciduous Forest,...
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Using an external vector in selections was deprecated in tidyselect 1.1.0.
+ℹ Please use `all_of()` or `any_of()` instead.
+  # Was:
+  data %&gt;% select(aopvars)
+
+  # Now:
+  data %&gt;% select(all_of(aopvars))
+
+See &lt;https://tidyselect.r-lib.org/reference/faq-external-vector.html&gt;.</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>database1202 <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"data/original/AOP_Database_12_2_Terrestrial.csv"</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">left_join</span>(., aop.vars) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>New names:
+Rows: 44 Columns: 302
+── Column specification
+──────────────────────────────────────────────────────── Delimiter: "," chr
+(8): domain, domainName, siteName, siteID, siteType, sampleType, fligh... dbl
+(294): priority, version, Barren_Land, Cultivated_Crops, Deciduous_Fores...
+ℹ Use `spec()` to retrieve the full column specification for this data. ℹ
+Specify the column types or set `show_col_types = FALSE` to quiet this message.
+Joining, by = "siteID"
+• `` -&gt; `...302`</code></pre>
+</div>
+</div>
+</section>
+<section id="subsetting-the-data-by-topic" class="level2">
+<h2 class="anchored" data-anchor-id="subsetting-the-data-by-topic">Subsetting the Data by Topic</h2>
+<p>I used the data selection spreadsheet that we discussed on Google Drive to subset the variables based on those we identified (i.e., those where <code>Don == 1</code>). I then classified each variable into one of four categories: <code>identifying</code>, <code>biophysical</code>, <code>disturbance</code>, and <code>social</code>. Finally, I created two different datasets. One that included <code>identifying</code>, <code>biophysical</code>, and <code>disturbance</code> variables and one that included all of the identified variables (including <code>social</code>). Due to the presence of missing data, I used the full dataset as the basis for imputing missing data before subsetting the data into the biophysical data frame. I imputed the data using <code>softImpute,</code> a method that uses nuclear-norm regularization to fill in missing values using a soft-thresholded Single Value Decomposition. All data were scaled and centered for imputation.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>data.list <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"data/original/LENS_database_variables.csv"</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(., Don <span class="sc">==</span> <span class="st">"1"</span>)</span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a>variables.biophys.dist <span class="ot">&lt;-</span> data.list <span class="sc">%&gt;%</span> </span>
+<span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(., Analysis <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">"Identifying"</span>, <span class="st">"Biophys"</span>, <span class="st">"Disturbance"</span>))</span>
+<span id="cb20-6"><a href="#cb20-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-7"><a href="#cb20-7" aria-hidden="true" tabindex="-1"></a><span class="co">#generate the search strings</span></span>
+<span id="cb20-8"><a href="#cb20-8" aria-hidden="true" tabindex="-1"></a>Pattern.biophys.dist <span class="ot">&lt;-</span> <span class="fu">paste</span>(<span class="fu">str_trim</span>(variables.biophys.dist<span class="sc">$</span>Variable), <span class="at">collapse =</span> <span class="st">"|"</span>)</span>
+<span id="cb20-9"><a href="#cb20-9" aria-hidden="true" tabindex="-1"></a>Pattern.all <span class="ot">&lt;-</span> <span class="fu">paste</span>(<span class="fu">str_trim</span>(data.list<span class="sc">$</span>Variable), <span class="at">collapse =</span> <span class="st">"|"</span>)</span>
+<span id="cb20-10"><a href="#cb20-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-11"><a href="#cb20-11" aria-hidden="true" tabindex="-1"></a>vars2use.biophys <span class="ot">&lt;-</span> <span class="fu">grep</span>(Pattern.biophys.dist, <span class="fu">colnames</span>(database1202),<span class="at">ignore.case=</span><span class="cn">TRUE</span>,<span class="at">value=</span><span class="cn">TRUE</span>)</span>
+<span id="cb20-12"><a href="#cb20-12" aria-hidden="true" tabindex="-1"></a>vars2use.all <span class="ot">&lt;-</span> <span class="fu">grep</span>(Pattern.all, <span class="fu">colnames</span>(database1202),<span class="at">ignore.case=</span><span class="cn">TRUE</span>,<span class="at">value=</span><span class="cn">TRUE</span>)</span>
+<span id="cb20-13"><a href="#cb20-13" aria-hidden="true" tabindex="-1"></a><span class="co">#refine the search string to exclude partial matches</span></span>
+<span id="cb20-14"><a href="#cb20-14" aria-hidden="true" tabindex="-1"></a>vars2use.biophys <span class="ot">&lt;-</span> <span class="fu">subset</span>(vars2use.biophys, (vars2use.biophys <span class="sc">%in%</span> variables.biophys.dist<span class="sc">$</span>Variable))</span>
+<span id="cb20-15"><a href="#cb20-15" aria-hidden="true" tabindex="-1"></a>vars2use.all <span class="ot">&lt;-</span> <span class="fu">subset</span>(vars2use.all, (vars2use.all <span class="sc">%in%</span> data.list<span class="sc">$</span>Variable))</span>
+<span id="cb20-16"><a href="#cb20-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-17"><a href="#cb20-17" aria-hidden="true" tabindex="-1"></a><span class="do">## filter the full dataset</span></span>
+<span id="cb20-18"><a href="#cb20-18" aria-hidden="true" tabindex="-1"></a>database.all <span class="ot">&lt;-</span> database1202 <span class="sc">%&gt;%</span> </span>
+<span id="cb20-19"><a href="#cb20-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(., <span class="fu">all_of</span>(<span class="fu">c</span>(<span class="st">"domain"</span>, <span class="st">"domainName"</span>, <span class="st">"siteName"</span>, <span class="st">"siteID"</span>, vars2use.all)))</span>
+<span id="cb20-20"><a href="#cb20-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-21"><a href="#cb20-21" aria-hidden="true" tabindex="-1"></a><span class="do">## Impute missing values</span></span>
+<span id="cb20-22"><a href="#cb20-22" aria-hidden="true" tabindex="-1"></a>fit <span class="ot">&lt;-</span><span class="fu">softImpute</span>(<span class="fu">as.matrix</span>(database.all[,<span class="sc">-</span><span class="fu">c</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">4</span>)]), <span class="at">rank.max =</span> <span class="dv">40</span>, <span class="at">lambda =</span> <span class="dv">49</span>, <span class="at">type =</span> <span class="st">"svd"</span>, <span class="at">thresh =</span> <span class="fl">1e-09</span>)</span>
+<span id="cb20-23"><a href="#cb20-23" aria-hidden="true" tabindex="-1"></a>aop.impute <span class="ot">&lt;-</span> <span class="fu">complete</span>(<span class="fu">as.matrix</span>(database.all[,<span class="sc">-</span><span class="fu">c</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">4</span>)]), fit,  <span class="at">unscale =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb20-24"><a href="#cb20-24" aria-hidden="true" tabindex="-1"></a>aop.subset.vars.scl <span class="ot">&lt;-</span> <span class="fu">biScale</span>(<span class="fu">as.matrix</span>(aop.impute), <span class="at">maxit =</span> <span class="dv">1000</span>, <span class="at">trace =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Iter 1 Total Changes 6.35987e+12 
+Iter 2 Total Changes 5.986642e+12 
+Iter 3 Total Changes 2062968890 
+Iter 4 Total Changes 187720794 
+Iter 5 Total Changes 80561306 
+Iter 6 Total Changes 7777817 
+Iter 7 Total Changes 8371165 
+Iter 8 Total Changes 4029336 
+Iter 9 Total Changes 2240631 
+Iter 10 Total Changes 1475082 
+Iter 11 Total Changes 948241.5 
+Iter 12 Total Changes 560823.2 
+Iter 13 Total Changes 312075.2 
+Iter 14 Total Changes 168659.9 
+Iter 15 Total Changes 91644.89 
+Iter 16 Total Changes 52175.89 
+Iter 17 Total Changes 32626.4 
+Iter 18 Total Changes 23393.79 
+Iter 19 Total Changes 19619.25 
+Iter 20 Total Changes 18954.39 
+Iter 21 Total Changes 20307.71 
+Iter 22 Total Changes 23207.76 
+Iter 23 Total Changes 27488.26 
+Iter 24 Total Changes 33124.41 
+Iter 25 Total Changes 40133.83 
+Iter 26 Total Changes 48500.65 
+Iter 27 Total Changes 58104.57 
+Iter 28 Total Changes 68653.01 
+Iter 29 Total Changes 79627.46 
+Iter 30 Total Changes 90267.15 
+Iter 31 Total Changes 99617.07 
+Iter 32 Total Changes 106656.1 
+Iter 33 Total Changes 110491 
+Iter 34 Total Changes 110564 
+Iter 35 Total Changes 106798.5 
+Iter 36 Total Changes 99623.12 
+Iter 37 Total Changes 89864.19 
+Iter 38 Total Changes 78550.98 
+Iter 39 Total Changes 66707.87 
+Iter 40 Total Changes 55194.86 
+Iter 41 Total Changes 44625.21 
+Iter 42 Total Changes 35355 
+Iter 43 Total Changes 27520.85 
+Iter 44 Total Changes 21099.12 
+Iter 45 Total Changes 15966.08 
+Iter 46 Total Changes 11947.94 
+Iter 47 Total Changes 8856.661 
+Iter 48 Total Changes 6512.596 
+Iter 49 Total Changes 4756.435 
+Iter 50 Total Changes 3453.906 
+Iter 51 Total Changes 2495.923 
+Iter 52 Total Changes 1796.283 
+Iter 53 Total Changes 1288.314 
+Iter 54 Total Changes 921.3179 
+Iter 55 Total Changes 657.2612 
+Iter 56 Total Changes 467.9248 
+Iter 57 Total Changes 332.5569 
+Iter 58 Total Changes 236.0083 
+Iter 59 Total Changes 167.2865 
+Iter 60 Total Changes 118.4544 
+Iter 61 Total Changes 83.80489 
+Iter 62 Total Changes 59.24822 
+Iter 63 Total Changes 41.86192 
+Iter 64 Total Changes 29.56263 
+Iter 65 Total Changes 20.86807 
+Iter 66 Total Changes 14.72539 
+Iter 67 Total Changes 10.38774 
+Iter 68 Total Changes 7.325995 
+Iter 69 Total Changes 5.165598 
+Iter 70 Total Changes 3.641647 
+Iter 71 Total Changes 2.566911 
+Iter 72 Total Changes 1.809129 
+Iter 73 Total Changes 1.274921 
+Iter 74 Total Changes 0.8983772 
+Iter 75 Total Changes 0.632998 
+Iter 76 Total Changes 0.445984 
+Iter 77 Total Changes 0.3142055 
+Iter 78 Total Changes 0.2213551 
+Iter 79 Total Changes 0.155937 
+Iter 80 Total Changes 0.1098489 
+Iter 81 Total Changes 0.07738047 
+Iter 82 Total Changes 0.05450767 
+Iter 83 Total Changes 0.03839511 
+Iter 84 Total Changes 0.02704504 
+Iter 85 Total Changes 0.01904995 
+Iter 86 Total Changes 0.01341824 
+Iter 87 Total Changes 0.00945134 
+Iter 88 Total Changes 0.006657143 
+Iter 89 Total Changes 0.004688994 
+Iter 90 Total Changes 0.003302702 
+Iter 91 Total Changes 0.002326253 
+Iter 92 Total Changes 0.001638487 
+Iter 93 Total Changes 0.001154057 
+Iter 94 Total Changes 0.0008128519 
+Iter 95 Total Changes 0.0005725234 
+Iter 96 Total Changes 0.000403251 
+Iter 97 Total Changes 0.0002840252 
+Iter 98 Total Changes 0.0002000491 
+Iter 99 Total Changes 0.0001409017 
+Iter 100 Total Changes 9.92423e-05 
+Iter 101 Total Changes 6.989978e-05 
+Iter 102 Total Changes 4.923299e-05 
+Iter 103 Total Changes 3.467629e-05 
+Iter 104 Total Changes 2.442357e-05 
+Iter 105 Total Changes 1.720252e-05 
+Iter 106 Total Changes 1.211634e-05 
+Iter 107 Total Changes 8.53384e-06 
+Iter 108 Total Changes 6.010719e-06 
+Iter 109 Total Changes 4.233525e-06 
+Iter 110 Total Changes 2.981823e-06 
+Iter 111 Total Changes 2.100184e-06 
+Iter 112 Total Changes 1.479216e-06 
+Iter 113 Total Changes 1.04189e-06 
+Iter 114 Total Changes 7.338481e-07 
+Iter 115 Total Changes 5.168671e-07 
+Iter 116 Total Changes 3.640337e-07 
+Iter 117 Total Changes 2.563824e-07 
+Iter 118 Total Changes 1.805932e-07 
+Iter 119 Total Changes 1.272091e-07 
+Iter 120 Total Changes 8.959385e-08 
+Iter 121 Total Changes 6.310153e-08 
+Iter 122 Total Changes 4.444723e-08 
+Iter 123 Total Changes 3.129662e-08 
+Iter 124 Total Changes 2.204771e-08 
+Iter 125 Total Changes 1.552969e-08 
+Iter 126 Total Changes 1.093794e-08 
+Iter 127 Total Changes 7.704914e-09 
+Iter 128 Total Changes 5.427929e-09 
+Iter 129 Total Changes 3.820313e-09 
+Iter 130 Total Changes 2.691295e-09 
+Iter 131 Total Changes 1.894683e-09 
+Iter 132 Total Changes 1.335392e-09 
+Iter 133 Total Changes 9.407153e-10 </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>database.impute <span class="ot">&lt;-</span> <span class="fu">cbind</span>(database.all[, <span class="fu">c</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">4</span>)], aop.subset.vars.scl)</span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a><span class="co">#filter the imputed data for the biophysical dataset</span></span>
+<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a>database.biophys <span class="ot">&lt;-</span> database.impute <span class="sc">%&gt;%</span> </span>
+<span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(., <span class="fu">all_of</span>(<span class="fu">c</span>(<span class="st">"domain"</span>, <span class="st">"domainName"</span>, <span class="st">"siteName"</span>, <span class="st">"siteID"</span>, vars2use.biophys)))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="generating-clusters" class="level2">
+<h2 class="anchored" data-anchor-id="generating-clusters">Generating Clusters</h2>
+<p>Based on our discussion the goal was to identify 8 clusters and compare the resulting groupings. Clustering looks to find homogeneous subgroups within the data. <em>K-means</em> clustering seeks to partition the data into a set number of clusters while <em>hierarchical clustering</em> does not have an <em>a priori</em> assumed number of clusters. <em>K-means</em> clustering seeks to minimize the amount of within-cluster variation and achieves clustering that is locally optimal based on the initial assignment of observations to clusters. The bottom-up agglomeration method for hierarchical clustering (the one I used) parses each site into the finest set of clusters and then combines them into larger and larger clusters as one moves up the tree. Clusters are defined based on a dissimilarity metric (i.e., the distance of observations from one another in multivariate space or the shape of the correlation profile within each set of observations). Because the data are measured on different scales, I used the centered and scaled values (i.e., mean=0 and sd=1). This assumes that each variable has the potential to be equally important in the clusters. I ran a k-means and hierarchical clusters based on both distance and correlation in case they are of interest.</p>
+<section id="k-means-clusters" class="level3">
+<h3 class="anchored" data-anchor-id="k-means-clusters">K-Means Clusters</h3>
+<p>K-means plots are generated by combining variables using PCA and then plotting the clusters. Note that with this many variables, the initial PCA axes do not capture much of the overall variation.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>biophys.kmeans <span class="ot">&lt;-</span> <span class="fu">kmeans</span>(database.biophys[,<span class="sc">-</span><span class="fu">c</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">4</span>)], <span class="dv">8</span>, <span class="at">nstart =</span> <span class="dv">50</span>)</span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>biophys.plot.mat <span class="ot">&lt;-</span> database.biophys[,<span class="sc">-</span><span class="fu">c</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">4</span>)]</span>
+<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a><span class="fu">rownames</span>(biophys.plot.mat) <span class="ot">&lt;-</span> database.biophys<span class="sc">$</span>siteID</span>
+<span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-5"><a href="#cb23-5" aria-hidden="true" tabindex="-1"></a><span class="fu">fviz_cluster</span>(biophys.kmeans, <span class="at">data =</span> biophys.plot.mat,</span>
+<span id="cb23-6"><a href="#cb23-6" aria-hidden="true" tabindex="-1"></a>             <span class="at">stand=</span><span class="cn">FALSE</span>,</span>
+<span id="cb23-7"><a href="#cb23-7" aria-hidden="true" tabindex="-1"></a>             <span class="at">palette =</span> <span class="fu">pal_ucscgb</span>()(<span class="dv">8</span>), </span>
+<span id="cb23-8"><a href="#cb23-8" aria-hidden="true" tabindex="-1"></a>             <span class="at">geom =</span> <span class="st">"text"</span>,</span>
+<span id="cb23-9"><a href="#cb23-9" aria-hidden="true" tabindex="-1"></a>             <span class="at">repel=</span><span class="cn">TRUE</span>,</span>
+<span id="cb23-10"><a href="#cb23-10" aria-hidden="true" tabindex="-1"></a>             <span class="at">ellipse.type =</span> <span class="st">"convex"</span>, </span>
+<span id="cb23-11"><a href="#cb23-11" aria-hidden="true" tabindex="-1"></a>             <span class="at">main=</span><span class="st">"K-means for Biophysical and Disturbance Data"</span>,</span>
+<span id="cb23-12"><a href="#cb23-12" aria-hidden="true" tabindex="-1"></a>             <span class="at">ggtheme =</span> <span class="fu">theme_bw</span>()</span>
+<span id="cb23-13"><a href="#cb23-13" aria-hidden="true" tabindex="-1"></a>             )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="AGU_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>all.kmeans <span class="ot">&lt;-</span> <span class="fu">kmeans</span>(database.impute[,<span class="sc">-</span><span class="fu">c</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">4</span>)], <span class="dv">8</span>, <span class="at">nstart =</span> <span class="dv">50</span>)</span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>all.plot.mat <span class="ot">&lt;-</span> database.impute[,<span class="sc">-</span><span class="fu">c</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">4</span>)]</span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a><span class="fu">rownames</span>(all.plot.mat) <span class="ot">&lt;-</span> database.impute<span class="sc">$</span>siteID</span>
+<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-5"><a href="#cb24-5" aria-hidden="true" tabindex="-1"></a><span class="fu">fviz_cluster</span>(all.kmeans, <span class="at">data =</span> all.plot.mat,</span>
+<span id="cb24-6"><a href="#cb24-6" aria-hidden="true" tabindex="-1"></a>             <span class="at">stand=</span><span class="cn">FALSE</span>,</span>
+<span id="cb24-7"><a href="#cb24-7" aria-hidden="true" tabindex="-1"></a>             <span class="at">palette =</span> <span class="fu">pal_ucscgb</span>()(<span class="dv">8</span>), </span>
+<span id="cb24-8"><a href="#cb24-8" aria-hidden="true" tabindex="-1"></a>             <span class="at">geom =</span> <span class="st">"text"</span>,</span>
+<span id="cb24-9"><a href="#cb24-9" aria-hidden="true" tabindex="-1"></a>             <span class="at">repel=</span><span class="cn">TRUE</span>,</span>
+<span id="cb24-10"><a href="#cb24-10" aria-hidden="true" tabindex="-1"></a>             <span class="at">ellipse.type =</span> <span class="st">"convex"</span>, </span>
+<span id="cb24-11"><a href="#cb24-11" aria-hidden="true" tabindex="-1"></a>             <span class="at">main=</span><span class="st">"K-means for Socio-Ecological Data"</span>,</span>
+<span id="cb24-12"><a href="#cb24-12" aria-hidden="true" tabindex="-1"></a>             <span class="at">ggtheme =</span> <span class="fu">theme_bw</span>()</span>
+<span id="cb24-13"><a href="#cb24-13" aria-hidden="true" tabindex="-1"></a>             )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="AGU_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</section>
+<section id="hierarchical-clusters-based-on-distance" class="level3">
+<h3 class="anchored" data-anchor-id="hierarchical-clusters-based-on-distance">Hierarchical Clusters Based on Distance</h3>
+<p>I used the complete linkage hierarchical clustering algorithm which maximizes the intercluster dissimilarity based on the Euclidean distance.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>dist.clust.biophys <span class="ot">&lt;-</span> <span class="fu">hclust</span>(<span class="fu">dist</span>(database.biophys[,<span class="sc">-</span><span class="fu">c</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">4</span>)]),  <span class="st">"complete"</span>)</span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a>dist.clust.all <span class="ot">&lt;-</span> <span class="fu">hclust</span>(<span class="fu">dist</span>(database.impute[,<span class="sc">-</span><span class="fu">c</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">4</span>)]),  <span class="st">"complete"</span>)</span>
+<span id="cb25-4"><a href="#cb25-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-5"><a href="#cb25-5" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(dist.clust.biophys, <span class="at">labels =</span> database.biophys<span class="sc">$</span>siteID, <span class="at">xlab =</span> <span class="st">""</span>, <span class="at">ylab =</span> <span class="st">""</span>, <span class="at">sub =</span> <span class="st">""</span>, <span class="at">main=</span><span class="st">"Distance-Based Cluster for Biophysical and Disturbance Data"</span>)</span>
+<span id="cb25-6"><a href="#cb25-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-7"><a href="#cb25-7" aria-hidden="true" tabindex="-1"></a><span class="fu">rect.hclust</span>(dist.clust.biophys, <span class="at">k =</span> <span class="dv">8</span>, <span class="at">border =</span> <span class="fu">pal_ucscgb</span>()(<span class="dv">8</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="AGU_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid" width="672"></p>
+</div>
+<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(dist.clust.all, <span class="at">labels =</span> database.impute<span class="sc">$</span>siteID, <span class="at">xlab =</span> <span class="st">""</span>, <span class="at">ylab =</span> <span class="st">""</span>, <span class="at">sub =</span> <span class="st">""</span>, <span class="at">main=</span><span class="st">"Distance-Based Cluster for Socio-Ecological Data"</span>)</span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a><span class="fu">rect.hclust</span>(dist.clust.all, <span class="at">k =</span> <span class="dv">8</span>, <span class="at">border =</span> <span class="fu">pal_ucscgb</span>()(<span class="dv">8</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="AGU_files/figure-html/unnamed-chunk-5-2.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</section>
+<section id="hierarchical-clusters-based-on-correlation" class="level3">
+<h3 class="anchored" data-anchor-id="hierarchical-clusters-based-on-correlation">Hierarchical Clusters Based on Correlation</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>cor.clust.biophys <span class="ot">&lt;-</span> <span class="fu">hclust</span>(<span class="fu">as.dist</span>(<span class="dv">1</span><span class="sc">-</span><span class="fu">cor</span>(<span class="fu">t</span>(database.biophys[,<span class="sc">-</span><span class="fu">c</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">4</span>)]))),  <span class="st">"complete"</span>)</span>
+<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a>cor.clust.all <span class="ot">&lt;-</span> <span class="fu">hclust</span>(<span class="fu">as.dist</span>(<span class="dv">1</span> <span class="sc">-</span><span class="fu">cor</span>(<span class="fu">t</span>(database.impute[,<span class="sc">-</span><span class="fu">c</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">4</span>)]))),  <span class="st">"complete"</span>)</span>
+<span id="cb27-4"><a href="#cb27-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-5"><a href="#cb27-5" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(cor.clust.biophys, <span class="at">labels =</span> database.biophys<span class="sc">$</span>siteID, <span class="at">xlab =</span> <span class="st">""</span>, <span class="at">ylab =</span> <span class="st">""</span>, <span class="at">sub =</span> <span class="st">""</span>, <span class="at">main=</span><span class="st">"Correlation-Based Cluster for Biophysical and Disturbance Data"</span>)</span>
+<span id="cb27-6"><a href="#cb27-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-7"><a href="#cb27-7" aria-hidden="true" tabindex="-1"></a><span class="fu">rect.hclust</span>(cor.clust.biophys, <span class="at">k =</span> <span class="dv">8</span>, <span class="at">border =</span> <span class="fu">pal_ucscgb</span>()(<span class="dv">8</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="AGU_files/figure-html/unnamed-chunk-6-1.png" class="img-fluid" width="672"></p>
+</div>
+<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(cor.clust.all, <span class="at">labels =</span> database.impute<span class="sc">$</span>siteID, <span class="at">xlab =</span> <span class="st">""</span>, <span class="at">ylab =</span> <span class="st">""</span>, <span class="at">sub =</span> <span class="st">""</span>, <span class="at">main=</span><span class="st">"Correlation-Based Cluster for Socio-Ecological Data"</span>)</span>
+<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a><span class="fu">rect.hclust</span>(cor.clust.all, <span class="at">k =</span> <span class="dv">8</span>, <span class="at">border =</span> <span class="fu">pal_ucscgb</span>()(<span class="dv">8</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="AGU_files/figure-html/unnamed-chunk-6-2.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</section>
+</section>
+<section id="creating-spatial-data-of-clusters" class="level2">
+<h2 class="anchored" data-anchor-id="creating-spatial-data-of-clusters">Creating Spatial Data of Clusters</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a>aop.footprint <span class="ot">&lt;-</span> <span class="fu">st_read</span>(<span class="st">"data/original/NEON-AOP-FlightBoxes.shp"</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(., <span class="at">siteID =</span> <span class="fu">substr</span>(Site, <span class="dv">5</span>, <span class="dv">8</span>)) <span class="sc">%&gt;%</span> <span class="fu">st_centroid</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Reading layer `NEON-AOP-FlightBoxes' from data source 
+  `/Users/mattwilliamson/Analyses/lens-arch/data/original/NEON-AOP-FlightBoxes.shp' 
+  using driver `ESRI Shapefile'
+Simple feature collection with 70 features and 2 fields
+Geometry type: POLYGON
+Dimension:     XY
+Bounding box:  xmin: -156.8429 ymin: 17.93711 xmax: -66.79832 ymax: 71.39723
+Geodetic CRS:  WGS 84</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning in st_centroid.sf(.): st_centroid assumes attributes are constant over
+geometries of x</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb32"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a>group.dist.clust.biophys <span class="ot">&lt;-</span> <span class="fu">cutree</span>(dist.clust.biophys, <span class="at">k =</span> <span class="dv">8</span>)</span>
+<span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a>group.dist.clust.all <span class="ot">&lt;-</span> <span class="fu">cutree</span>(dist.clust.all, <span class="at">k =</span> <span class="dv">8</span>)</span>
+<span id="cb32-3"><a href="#cb32-3" aria-hidden="true" tabindex="-1"></a>group.cor.clust.biophys <span class="ot">&lt;-</span> <span class="fu">cutree</span>(cor.clust.biophys, <span class="at">k =</span> <span class="dv">8</span>)</span>
+<span id="cb32-4"><a href="#cb32-4" aria-hidden="true" tabindex="-1"></a>group.cor.clust.all <span class="ot">&lt;-</span> <span class="fu">cutree</span>(cor.clust.all, <span class="at">k =</span> <span class="dv">8</span>)</span>
+<span id="cb32-5"><a href="#cb32-5" aria-hidden="true" tabindex="-1"></a>group.kmeans.biophys <span class="ot">&lt;-</span> biophys.kmeans<span class="sc">$</span>cluster </span>
+<span id="cb32-6"><a href="#cb32-6" aria-hidden="true" tabindex="-1"></a>group.kmeans.all <span class="ot">&lt;-</span> all.kmeans<span class="sc">$</span>cluster</span>
+<span id="cb32-7"><a href="#cb32-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb32-8"><a href="#cb32-8" aria-hidden="true" tabindex="-1"></a>database.group <span class="ot">&lt;-</span> database.impute <span class="sc">%&gt;%</span> </span>
+<span id="cb32-9"><a href="#cb32-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">bind_cols</span>(., <span class="st">"SEClustDist"</span> <span class="ot">=</span> group.dist.clust.all, <span class="st">"BiophysClustDist"</span> <span class="ot">=</span> group.dist.clust.biophys, <span class="st">"SEClustCor"</span> <span class="ot">=</span> group.cor.clust.all,</span>
+<span id="cb32-10"><a href="#cb32-10" aria-hidden="true" tabindex="-1"></a>            <span class="st">"BiophysClustCor"</span> <span class="ot">=</span> group.cor.clust.biophys,</span>
+<span id="cb32-11"><a href="#cb32-11" aria-hidden="true" tabindex="-1"></a>            <span class="st">"SEKmeans"</span> <span class="ot">=</span> group.kmeans.all, <span class="st">"BiophysKmeans"</span> <span class="ot">=</span> group.kmeans.biophys) </span>
+<span id="cb32-12"><a href="#cb32-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb32-13"><a href="#cb32-13" aria-hidden="true" tabindex="-1"></a>aop.join <span class="ot">&lt;-</span> aop.footprint <span class="sc">%&gt;%</span> </span>
+<span id="cb32-14"><a href="#cb32-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">right_join</span>(database.group) <span class="sc">%&gt;%</span> </span>
+<span id="cb32-15"><a href="#cb32-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(., siteID <span class="sc">!=</span> <span class="st">"BARR"</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb32-16"><a href="#cb32-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(, <span class="fu">c</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">6</span>, <span class="dv">113</span><span class="sc">:</span><span class="dv">119</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Joining, by = "siteID"</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb34"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="fu">st_write</span>(<span class="fu">st_as_sf</span>(aop.join), here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"data/processed/aop_clusters.shp"</span>), <span class="at">append =</span> <span class="cn">FALSE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning in abbreviate_shapefile_names(obj): Field names abbreviated for ESRI
+Shapefile driver</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Deleting layer `aop_clusters' using driver `ESRI Shapefile'
+Writing layer `aop_clusters' to data source 
+  `/Users/mattwilliamson/Analyses/lens-arch/data/processed/aop_clusters.shp' using driver `ESRI Shapefile'
+Writing 57 features with 12 fields and geometry type Point.</code></pre>
+</div>
+</div>
+</section>
+<section id="identifying-important-variables" class="level2">
+<h2 class="anchored" data-anchor-id="identifying-important-variables">Identifying Important Variables</h2>
+<p>Archetypes inherently recognize that no single variable is likely to be responsible for the grouping of SE systems. Moreover, because clusters are formed based on the position of sites in multivariate space, it is unlikely that any single variable is solely responsible for the grouping or splitting of sites (unlike a random forest tree). As such, attempting feature selection (i.e., the identification of singular important variables) is a slightly counterintuitive exercise. Rather than identifying the variables responsible for the groups, I chose to identify which principle components explained up to 80% of the variation in the data and then summed the absolute value of the loadings of those variables to characterize the role of the different variables in parsing out the multivariate space.</p>
+<p>I used the cumulative proportion of variance explained (PVE) to identify which PCs where necessary to explain 80% of the variation in each dataset (1:14 for the biophysical and 1:15 for the social-ecological data),</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb37"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a>pr.biophys <span class="ot">&lt;-</span> <span class="fu">prcomp</span>(database.biophys[,<span class="sc">-</span><span class="fu">c</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">4</span>)] , <span class="at">scale =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb37-2"><a href="#cb37-2" aria-hidden="true" tabindex="-1"></a>pve.biophys <span class="ot">&lt;-</span>pr.biophys<span class="sc">$</span>sdev<span class="sc">^</span><span class="dv">2</span> <span class="sc">/</span> <span class="fu">sum</span>(pr.biophys<span class="sc">$</span>sdev<span class="sc">^</span><span class="dv">2</span>)</span>
+<span id="cb37-3"><a href="#cb37-3" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(<span class="fu">cumsum</span>(pve.biophys), <span class="at">xlab =</span> <span class="st">"Principal Component"</span>,</span>
+<span id="cb37-4"><a href="#cb37-4" aria-hidden="true" tabindex="-1"></a><span class="at">ylab =</span> <span class="st">"Cumulative Proportion of Variance Explained"</span>,</span>
+<span id="cb37-5"><a href="#cb37-5" aria-hidden="true" tabindex="-1"></a><span class="at">ylim =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">1</span>), <span class="at">type =</span> <span class="st">"b"</span>, <span class="at">main=</span><span class="st">"PVE for Biophysical PCA"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="AGU_files/figure-html/unnamed-chunk-8-1.png" class="img-fluid" width="672"></p>
+</div>
+<div class="sourceCode cell-code" id="cb38"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a>biophys.rot <span class="ot">&lt;-</span> <span class="fu">as.data.frame</span>(<span class="fu">abs</span>(pr.biophys<span class="sc">$</span>rotation[,<span class="dv">1</span><span class="sc">:</span><span class="dv">14</span>])) </span>
+<span id="cb38-2"><a href="#cb38-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb38-3"><a href="#cb38-3" aria-hidden="true" tabindex="-1"></a>biophys.rot<span class="sc">$</span>cumulative <span class="ot">&lt;-</span>  <span class="fu">rowSums</span>(biophys.rot[,<span class="dv">1</span><span class="sc">:</span><span class="dv">14</span>])</span>
+<span id="cb38-4"><a href="#cb38-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb38-5"><a href="#cb38-5" aria-hidden="true" tabindex="-1"></a>biophys.rot<span class="sc">$</span>prop <span class="ot">&lt;-</span> <span class="fu">unlist</span>(<span class="fu">lapply</span>(<span class="dv">1</span><span class="sc">:</span><span class="fu">nrow</span>(biophys.rot), <span class="cf">function</span>(x) biophys.rot[x,<span class="st">"cumulative"</span>]<span class="sc">/</span><span class="fu">sum</span>(biophys.rot<span class="sc">$</span>cumulative))) </span>
+<span id="cb38-6"><a href="#cb38-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb38-7"><a href="#cb38-7" aria-hidden="true" tabindex="-1"></a>biophys.rot <span class="sc">%&gt;%</span> </span>
+<span id="cb38-8"><a href="#cb38-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(prop)) <span class="sc">%&gt;%</span> </span>
+<span id="cb38-9"><a href="#cb38-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">slice</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">10</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb38-10"><a href="#cb38-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rownames</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> [1] "Perc_totalDISTURBED"   "Perc_OTHER_MECHANICAL" "Woody_Wetlands"       
+ [4] "Perc_PRESCRIBED_FIRE"  "bio6"                  "Perennial_Ice_Snow"   
+ [7] "Perc_THINNING"         "Perc_UNKNOWN"          "Perc_Fire"            
+[10] "Open_Water"           </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb40"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a>pr.all <span class="ot">&lt;-</span> <span class="fu">prcomp</span>(database.impute[,<span class="sc">-</span><span class="fu">c</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">4</span>)] , <span class="at">scale =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb40-2"><a href="#cb40-2" aria-hidden="true" tabindex="-1"></a>pve.all <span class="ot">&lt;-</span>pr.all<span class="sc">$</span>sdev<span class="sc">^</span><span class="dv">2</span> <span class="sc">/</span> <span class="fu">sum</span>(pr.all<span class="sc">$</span>sdev<span class="sc">^</span><span class="dv">2</span>)</span>
+<span id="cb40-3"><a href="#cb40-3" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(<span class="fu">cumsum</span>(pve.all), <span class="at">xlab =</span> <span class="st">"Principal Component"</span>,</span>
+<span id="cb40-4"><a href="#cb40-4" aria-hidden="true" tabindex="-1"></a><span class="at">ylab =</span> <span class="st">"Cumulative Proportion of Variance Explained"</span>,</span>
+<span id="cb40-5"><a href="#cb40-5" aria-hidden="true" tabindex="-1"></a><span class="at">ylim =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">1</span>), <span class="at">type =</span> <span class="st">"b"</span>, <span class="at">main=</span><span class="st">"PVE for Social-Ecological PCA"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="AGU_files/figure-html/unnamed-chunk-8-2.png" class="img-fluid" width="672"></p>
+</div>
+<div class="sourceCode cell-code" id="cb41"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a>all.rot <span class="ot">&lt;-</span> <span class="fu">as.data.frame</span>(<span class="fu">abs</span>(pr.all<span class="sc">$</span>rotation[,<span class="dv">1</span><span class="sc">:</span><span class="dv">15</span>])) </span>
+<span id="cb41-2"><a href="#cb41-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-3"><a href="#cb41-3" aria-hidden="true" tabindex="-1"></a>all.rot<span class="sc">$</span>cumulative <span class="ot">&lt;-</span>  <span class="fu">rowSums</span>(all.rot[,<span class="dv">1</span><span class="sc">:</span><span class="dv">15</span>])</span>
+<span id="cb41-4"><a href="#cb41-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-5"><a href="#cb41-5" aria-hidden="true" tabindex="-1"></a>all.rot<span class="sc">$</span>prop <span class="ot">&lt;-</span> <span class="fu">unlist</span>(<span class="fu">lapply</span>(<span class="dv">1</span><span class="sc">:</span><span class="fu">nrow</span>(all.rot), <span class="cf">function</span>(x) all.rot[x,<span class="st">"cumulative"</span>]<span class="sc">/</span><span class="fu">sum</span>(all.rot<span class="sc">$</span>cumulative))) </span>
+<span id="cb41-6"><a href="#cb41-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-7"><a href="#cb41-7" aria-hidden="true" tabindex="-1"></a>all.rot <span class="sc">%&gt;%</span> </span>
+<span id="cb41-8"><a href="#cb41-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(prop)) <span class="sc">%&gt;%</span> </span>
+<span id="cb41-9"><a href="#cb41-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">slice</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">10</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb41-10"><a href="#cb41-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rownames</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> [1] "Mixed_Forest"                             
+ [2] "SUM_B02001_006"                           
+ [3] "Perc_PRESCRIBED_FIRE"                     
+ [4] "Net_Income_Per_Operation"                 
+ [5] "Averge_area_disturbed_per_year_PercentAOP"
+ [6] "Emergent_Herbaceous_Wetlands"             
+ [7] "Open_Water"                               
+ [8] "Perc_WILDFIRE"                            
+ [9] "Perennial_Ice_Snow"                       
+[10] "Evergreen_Forest"                         </code></pre>
+</div>
+</div>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    setTimeout(function() {
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      let href = ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+    tippyHover(ref, function() {
+      var popup = window.document.createElement('div');
+      cites.forEach(function(cite) {
+        var citeDiv = window.document.createElement('div');
+        citeDiv.classList.add('hanging-indent');
+        citeDiv.classList.add('csl-entry');
+        var biblioDiv = window.document.getElementById('ref-' + cite);
+        if (biblioDiv) {
+          citeDiv.innerHTML = biblioDiv.innerHTML;
+        }
+        popup.appendChild(citeDiv);
+      });
+      return popup.innerHTML;
+    });
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
